@@ -1,26 +1,64 @@
-def validatepassword(password):
-    errors = []
-    if len(password) < 8:
-        errors.append("Must contain at least 8 characters.")
-    if not any(ch.isupper() for ch in password):
-        errors.append("Must include at least one uppercase letter.")
-    if not any(ch.islower() for ch in password):
-        errors.append("Must include at least one lowercase letter.")
-    if not any(ch.isdigit() for ch in password):
-        errors.append("Must include at least one digit.")
-    if not any(ch in "!@#$%" for ch in password):
-        errors.append("Must include at least one special character (!@#$%).")
-    if any(ch.isspace() for ch in password):
-        errors.append("Must not contain any whitespace.")
-    if errors:
-        return False, errors
-    return True, []
+def validate_password(pass):
+    valid = True
+    special_chars = "!@#$%"
 
-pw = input("Enter password: ")
-valid, issues = validatepassword(pw)
-if valid:
-    print("Password is valid.")
+    #Rule1
+    if len(password)<8:
+        print("The password must contain atleast 8 characters")
+        valid = False
+
+    #Rule2
+    has_upper = False
+    for ch in password:
+        if 'A' <= ch <= 'Z':
+            has_upper = 'True'
+            break
+
+        if not has_upper :
+            print("The password must include atleast one lowercase letter(a-z)")
+            valid = 'False'
+
+    #Rule 3   
+
+    has_lower = False
+    for ch in password:
+        if 'A' <= ch <= 'Z':
+            has_upper = 'True'
+            break
+
+        if not has_lower :
+            print("The password must include atleast one lowercase letter(A-Z)")
+            valid = 'False'
+
+    #Rule 5
+
+    has_digit = False
+    for ch in password:
+        if '0' <= ch <= '9':
+            has_digit = 'True'
+            break
+
+        if not has_digit :
+            print("The password must contain one special character from the set !@#$%")
+            valid = 'False' 
+
+
+     #Rule 6
+
+    has_space = False
+    for ch in password:
+        if ch== " " or ch== "\t" or ch== "\n":
+            has_space = 'True'
+            break
+
+        if not has_space :
+            print("The password should not have whitespace.")
+            valid = 'False'   
+
+
+user_pasword = input("Enter password: ")
+if validate_password(user_password):
+    print("password is valid")
+
 else:
-    print("Password is invalid:")
-    for e in issues:
-        print("-", e)
+    pin("Password is invalid")    
