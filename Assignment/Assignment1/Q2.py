@@ -1,5 +1,5 @@
 operation = input("Enter operation (add/sub/mul/div/mod): ").strip().lower()
-num1 = float(input("Enter first number: "))
+num1 = (input("Enter first number: "))
 num2 = float(input("Enter second number: "))
 
 if operation == "add":
