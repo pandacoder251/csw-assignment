@@ -13,4 +13,4 @@ voter_dict = {
     "Eligible": [v[0] for v in voters if v[1] >= 18 and v[2]=="Indian"],
     "NotEligible": [v[0] for v in voters if not (v[1] >= 18 and v[2]=="Indian")]
 }
-print(voter_dict)
+print(voter_dict) 
