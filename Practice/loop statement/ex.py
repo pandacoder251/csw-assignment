@@ -41,4 +41,7 @@ c = int(input("enter 3rd num: "))
 if a < b and b < c:
     print(" c is largest")
 elif a> b and b > c:
-    print()
+    print("a is the largest")
+
+else:
+    print("b is greatest")    
