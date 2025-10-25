@@ -5,7 +5,7 @@ students = [
 ]
 
 # a) Average marks per student
-avg_marks = {student["info"][1]: sum(student["marks"])/len(student["marks"]) for student in students}
+avg_marks = {student["info"][1]: sum(student["marks"])//len(student["marks"]) for student in students}
 print("Average Marks:", avg_marks)
 
 # b) Total skill frequency
