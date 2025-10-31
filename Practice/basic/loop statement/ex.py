@@ -70,3 +70,15 @@ elif avg > 60 and avg <= 69:
 else:
     print("Fail :( ")
 '''
+
+'''
+x = 10 #global
+def fun():
+    
+    print(x)
+     #global y
+    y = 3 
+    print(y)
+
+fun()
+print(y)'''
