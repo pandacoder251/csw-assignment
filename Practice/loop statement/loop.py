@@ -59,7 +59,7 @@ while True:
 
 
 #3
-password = "123"
+'''password = "123"
 while True:
     user = input("Enter the secrete number : ")
     if user != password:
@@ -70,4 +70,5 @@ while True:
         break
     else:
         print("Access granted")
-        break
+        break'''
+
