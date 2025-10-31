@@ -1,9 +1,10 @@
+#1
 ''' n = int(input("Enter a positive integer: "))
 sum = 0
 for i in range(1, n + 1):
     sum = sum + i
 print("The sum of the first", n, "positive integers is:", sum)
-
+#2
 n = int(input("Enter a positive integer: "))
 rev = 0
 while n> 0:
@@ -11,7 +12,7 @@ while n> 0:
     rev = rev * 10 + dg
     n = n // 10
 print("The reverse of the given number is:", rev)'''
-
+#3
 #n = int(input("Enter a positive integer: "))
 '''count = 0
 while n> 0:
@@ -27,3 +28,46 @@ print("The number of digits in the given number is:", count)'''
         break
     else:
         print("Access denied")'''
+
+
+
+#jump statement
+
+#1
+'''n = int(input("Enter a positive integer: "))
+i = 0
+while i < n:
+    i += 1
+    if i%3 == 0:
+        continue 
+    print(i)'''
+
+#2
+'''sum = 0
+while True:
+    num = int(input("Enter a  integer: "))
+    if num > 0:
+        sum += num
+    elif num<0:
+        print("Looping terminated.")
+        print("Sum of positive numbers entered:", sum)
+        break
+    
+    print("You entered:", num)
+    print("Enter the next number (negative to quit):")
+    continue'''
+
+
+#3
+password = "123"
+while True:
+    user = input("Enter the secrete number : ")
+    if user != password:
+        print("Wrong number, try again")
+        continue
+    elif user == "exit":
+        print("Exiting the loop")
+        break
+    else:
+        print("Access granted")
+        break
