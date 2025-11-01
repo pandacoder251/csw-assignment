@@ -75,7 +75,7 @@ while True:
 
 #for loop 
 #1
-def sum_of_divior(n):
+'''def sum_of_divior(n):
     total_sum = 0
     for i in range(1, n+1):
         if n % i == 0:
@@ -83,4 +83,18 @@ def sum_of_divior(n):
     return total_sum
 num = int(input("Enter a positive integer: "))
 result = sum_of_divior(num)
-print("The sum of all divisors of", num, "is:", result)
+print("The sum of all divisors of", num, "is:", result)'''
+
+#2
+'''def fib_without_recursion(n):
+    a, b = 0, 1
+    fib_sequence = []
+    for _ in range(n):
+        fib_sequence.append(a)
+        a, b = b, a + b
+    return fib_sequence
+num = int(input("Enter the number of Fibonacci terms to generate: "))
+fib_sequence = fib_without_recursion(num)
+print("Fibonacci sequence up to", num, "terms:", fib_sequence)'''
+
+#3

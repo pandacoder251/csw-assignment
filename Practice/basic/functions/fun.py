@@ -79,5 +79,73 @@ def func_area_circle(r):
     return math.pi * r**2
 radius = float(input("Enter the radius of the circle: "))
 area = func_area_circle(radius)
-print("The area of the circle with radius", radius, "is:", area)'''
+print("The area of the circle with radius", radius, "is:", area)
 
+#global & local variable
+
+#1
+global_var_count = 0
+def increment_count():
+    global global_var_count
+    while global_var_count < 5:
+        print("Inside function, count:", global_var_count)
+        global_var_count += 1
+    return global_var_count
+increment_count()
+print("Outside function, count:", global_var_count)
+
+
+#2
+def num_check():
+    while True:
+        num = int(input("Enter a positive number: " )) #local variable
+        if num % 2 == 0:
+            print("You entered an even number:", num)
+        else:
+            print("You entered an odd number:", num)
+        if num == -1:
+            print("Negative number entered, exiting the loop.")
+            break
+num_check()        '''
+
+
+#3
+'''item_count = 0
+def add_item():
+    global item_count 
+    item_name = input("Enter item name: ")
+    item_count += 1
+    print(f"'{item_name}' added. Total items so far: {item_count}")
+def show_count():
+    print(f"\nTotal number of items added: {item_count}")
+while True:
+    user_input = input("Type 'add' to add item or 'done' to stop: ").lower()
+    if user_input == "add":
+        add_item()
+    elif user_input == "done":
+        break
+    else:
+        print("Invalid input. Please type 'add' or 'done'.")
+show_count()'''
+
+
+
+'''
+items = [] #list to store items
+def add_item():
+    item_name = input("Enter item name: ")
+    items.append(item_name)
+    print(f"'{item_name}' added. Total items so far: {len(items)}")
+def show_count():
+    print(f"\nTotal number of items added: {len(items)}")
+while True:
+    user_input = input("Type 'add' to add item or 'done' to stop: ").lower()
+    if user_input == "add":
+        add_item()
+    elif user_input == "done":
+        print("Exiting item addition.")
+        print("Final items:", items)
+        break
+    else:
+        print("Invalid input. Please type 'add' or 'done'.")
+show_count()'''
