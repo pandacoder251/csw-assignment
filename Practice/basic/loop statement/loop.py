@@ -73,3 +73,14 @@ while True:
         break'''
 
 
+#for loop 
+#1
+def sum_of_divior(n):
+    total_sum = 0
+    for i in range(1, n+1):
+        if n % i == 0:
+            total_sum += i
+    return total_sum
+num = int(input("Enter a positive integer: "))
+result = sum_of_divior(num)
+print("The sum of all divisors of", num, "is:", result)
