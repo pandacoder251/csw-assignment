@@ -204,3 +204,14 @@ print(total)  # Output: 21
 c = [1, 2, 3, 4, 5, 6]
 total = reduce(lambda x, y: x + y, c)
 print(total)  # Output: 21'''
+
+
+#passing argument throuh a list:-
+
+def set_list_vals(list_arg):
+    list_arg[0] = 100
+    list_arg[1] = 200
+    list_arg[2] = 250
+a_list = [0,0,0]
+set_list_vals(a_list)
+print(a_list)
