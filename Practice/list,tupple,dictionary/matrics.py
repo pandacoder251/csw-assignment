@@ -55,3 +55,5 @@ print("*"*10)
 is_square = len(A) == len(A[0])
 print("Is square matrix:", is_square)
 
+
+
