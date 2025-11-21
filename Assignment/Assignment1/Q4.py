@@ -1,9 +1,11 @@
 def palindrome_for_loop(s):
     s = s.lower()
-    return s == s[::-1]
+    rev = ""
+    for ch in s:
+        rev = ch + rev
+    return s == rev 
 
 def palindrome_two_pointer(s):
-    import string
     s = ''.join(ch.lower() for ch in s if ch.isalnum())
     left, right = 0, len(s) - 1
     while left < right:
