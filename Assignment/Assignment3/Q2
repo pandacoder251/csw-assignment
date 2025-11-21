@@ -1,0 +1,29 @@
+# Q2 Solution
+
+while True:
+    user_input = input("Enter operation (add/sub/mul/div) or 'exit' to quit: ")
+
+    if user_input.lower() == "exit":
+        print("Program terminated.")
+        break
+
+    try:
+        op, n1, n2 = user_input.split()
+        n1, n2 = float(n1), float(n2)
+
+        if op == "add":
+            print("Result:", n1 + n2)
+        elif op == "sub":
+            print("Result:", n1 - n2)
+        elif op == "mul":
+            print("Result:", n1 * n2)
+        elif op == "div":
+            if n2 == 0:
+                print("Error: Division by zero is not allowed.")
+            else:
+                print("Result:", n1 / n2)
+        else:
+            print("Error: Invalid operation.")
+
+    except ValueError:
+        print("Error: Invalid format. Use: operation num1 num2")

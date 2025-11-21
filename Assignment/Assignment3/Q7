@@ -1,0 +1,14 @@
+# Q7 Solution
+
+import random
+
+def sensordatastream():
+    while True:
+        yield round(random.uniform(20, 30), 2)
+
+
+stream = sensordatastream()
+
+print("First 10 sensor readings:")
+for _ in range(10):
+    print(next(stream))

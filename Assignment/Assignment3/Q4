@@ -1,0 +1,15 @@
+# Q4 Solution
+
+def sales_report(*args, **kwargs):
+    total = sum(args)
+    print("Total Sales Amount:", total)
+
+    print("Number of Extra Information Items:", len(kwargs))
+    print("Extra Information Provided:")
+
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+
+# Example call
+sales_report(2000, 5000, 5500, Name="John Doe", Date="2025-11-01", Location="Bhubaneswar")

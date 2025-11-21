@@ -133,7 +133,7 @@ rev = ''.join(rev)
 print(rev)'''
 
 #justification methods
-s = "hello"
+'''s = "hello"
 print(s.ljust(10,'-'))
 print(s.rjust(10,'-'))
 print(s.center(10,'-'))
@@ -141,4 +141,4 @@ print(s.center(10,'-'))
 n = "24"
 print(n.zfill(10))
 print("-24".zfill(10))
-print("+24".zfill(10))
+print("+24".zfill(10))'''

@@ -3,9 +3,10 @@
 sum = 0
 for i in range(1, n + 1):
     sum = sum + i
-print("The sum of the first", n, "positive integers is:", sum)
+print("The sum of the first", n, "positive integers is:", sum)'''
+
 #2
-n = int(input("Enter a positive integer: "))
+'''n = int(input("Enter a positive integer: "))
 rev = 0
 while n> 0:
     dg = n % 10

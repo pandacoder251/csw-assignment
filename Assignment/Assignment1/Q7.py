@@ -1,4 +1,4 @@
-
+import string
 sentence = input("Enter a sentence: ")
 separator = input("Enter a custom separator: ")
 

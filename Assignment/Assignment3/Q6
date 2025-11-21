@@ -1,0 +1,15 @@
+# Q6 Solution
+
+def filterhighsales(sales, threshold):
+    for amount in sales:
+        if amount >= threshold:
+            yield amount
+
+
+# Example demonstration
+sales_list = [250, 800, 450, 1200, 600]
+threshold = 500
+
+print("High Sales:")
+for s in filterhighsales(sales_list, threshold):
+    print(s)

@@ -1,0 +1,19 @@
+# Q8 Solution (save as sumargs.py)
+
+import sys
+
+try:
+    args = sys.argv[1:]     # ignore filename
+    total = 0
+
+    for value in args:
+        if value.replace(".", "", 1).isdigit():
+            total += float(value)
+        else:
+            print(f"Error: Invalid input '{value}'. Please enter only numbers.")
+            sys.exit()
+
+    print("Sum of numbers:", total)
+
+except Exception as e:
+    print("Error:", e)

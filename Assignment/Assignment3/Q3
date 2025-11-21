@@ -1,0 +1,23 @@
+# Q3 Solution
+
+nums = list(map(int, input("Enter integers separated by spaces: ").split()))
+
+# Unpack
+first, second, *remaining = nums
+print("First number:", first)
+print("Second number:", second)
+print("Remaining numbers:", remaining)
+
+# Swap
+first, second = second, first
+print("After swapping: First:", first, ", Second:", second)
+
+# Sum of remaining
+print("Sum of remaining numbers:", sum(remaining))
+
+# Unpacking Example
+first, *middle, last = nums
+print("Unpacking Example:")
+print("First:", first)
+print("Middle:", middle)
+print("Last:", last)
